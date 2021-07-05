@@ -90,7 +90,7 @@ for i in range(0,10):
 
 	#Storing Results back into .csv format
 	store=pd.DataFrame(res)
-	store.to_csv(con+"Tx.csv")			#Input to Tx Code
+	store.to_csv(con+"Tx.csv",index=False)			#Input to Tx Code
 	store=pd.DataFrame(Dr)
 	store.to_csv("Rx.csv")			#Storage of Received Signals
 
